@@ -36,7 +36,11 @@ app.post('/charge', (req, res) => {
         description: 'A novel',
         currency: 'usd',
         customer: customer.id
-    })).then(charge => res.render('success'));
+    }))
+    .then(charge => res.render('success'))
+    .catch(err => {
+        console.log(err);
+    });
 });
 
 const port = process.env.PORT || 5000;
