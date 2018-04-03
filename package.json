@@ -1,0 +1,28 @@
+{
+  "name": "bookseller",
+  "version": "1.0.0",
+  "description": "Stripe API infused ecommerce app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevDHera/StripeAPI-based-Ecommerce.git"
+  },
+  "keywords": [
+    "StripeAPI"
+  ],
+  "author": "DevD Hera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevDHera/StripeAPI-based-Ecommerce/issues"
+  },
+  "homepage": "https://github.com/DevDHera/StripeAPI-based-Ecommerce#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "stripe": "^5.7.0"
+  }
+}

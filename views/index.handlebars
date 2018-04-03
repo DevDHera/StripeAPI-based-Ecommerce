@@ -1,0 +1,29 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="displat-3 mt-3 pt-5">
+                A Novel by Rhys Bowen ***The Tuscan Sun***
+            </h1>
+            <p class="lead">A mystery that will keep you thrive for more</p>
+            <form action="/charge" method="POST">
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="{{stripePublishableKey}}"
+                    data-amount="25000"
+                    data-name="The Tuscan Sun"
+                    data-description="A Novel by Rhys Bowen"
+                    data-image="/img/marketplace.png"                    
+                    data-locale="auto">
+                </script>
+                <script>
+                    //Hide default Stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = "none";
+                </script>
+                <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase Book</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/book.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+</section>
